@@ -31,7 +31,7 @@ Ensure the following tools are installed before deploying the application:
    git clone https://github.com/yourusername/AgroWise-OliveSmart-JSP.git
    cd AgroWise-OliveSmart-JSP
    
-## 2. Connect to Your Database
+2. Connect to Your Database
 
 The application requires a MySQL database. Follow these steps to configure your database connection:
 
