@@ -24,14 +24,13 @@ Ensure the following tools are installed before deploying the application:
 - **Apache Tomcat Server (9.0 or higher)**  
 - **MySQL Server**  
 
-## Installation  
-
-1. Clone the repository:  
+# Installation and Set-Up
+## 1. Clone the repository:  
    
    git clone https://github.com/yourusername/AgroWise-OliveSmart-JSP.git
    cd AgroWise-OliveSmart-JSP
    
-2. Connect to Your Database
+## 2. Connect to Your Database and OpenWeather API
 
 The application requires a MySQL database. Follow these steps to configure your database connection:
 
@@ -39,7 +38,7 @@ The application requires a MySQL database. Follow these steps to configure your 
 1. Log in to your MySQL server:
    ```bash
    mysql -u root -p
-   CREATE DATABASE ismgroup21;
+   CREATE DATABASE your_db_name;
 ### Step 2: Set Up Environment Variables
 Define the following environment variables on your system:
 
@@ -48,7 +47,7 @@ Define the following environment variables on your system:
 - **DB_NAME**: Name of your database (e.g., `ismgroup21`).
 - **DB_USERNAME**: Your database username.
 - **DB_PASSWORD**: Your database password.
-- **OPEN_WEATHER_API_KEY**: Your API key for weather data fetching.
+- **API_KEY**: Your API key for weather data fetching.
 ### On Linux/MacOS
 - Use the following commands to set up the environment variables:
    ```bash
@@ -57,7 +56,7 @@ Define the following environment variables on your system:
    export DB_NAME=your_db_name
    export DB_USERNAME=your_username
    export DB_PASSWORD=your_password
-   export OPEN_WEATHER_API_KEY=your_api_key
+   export API_KEY=your_api_key
    
 ### On Windows Command Prompt
 - Use the following commands to set up the environment variables:
@@ -67,7 +66,7 @@ Define the following environment variables on your system:
   set DB_NAME=your_db_name
   set DB_USERNAME=your_username
   set DB_PASSWORD=your_password
-  set OPEN_WEATHER_API_KEY=your_api_key 
+  set API_KEY=your_api_key 
 
 ### Step 3: Verify Database Connection
 - Test the connection by running the application on your Tomcat server.
