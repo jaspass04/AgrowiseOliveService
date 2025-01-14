@@ -42,9 +42,9 @@ The application requires a MySQL database. Follow these steps to configure your 
 ### Step 2: Set Up Environment Variables
 Define the following environment variables on your system:
 
-- **DB_SERVER**: Database server address (e.g., `195.251.249.131`).
-- **DB_SERVER_PORT**: Database server port (e.g., `3306`).
-- **DB_NAME**: Name of your database (e.g., `ismgroup21`).
+- **DB_SERVER**: Database server address.
+- **DB_SERVER_PORT**: Database server port.
+- **DB_NAME**: Name of your database.
 - **DB_USERNAME**: Your database username.
 - **DB_PASSWORD**: Your database password.
 - **API_KEY**: Your API key for weather data fetching.
