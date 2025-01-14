@@ -48,7 +48,7 @@ Define the following environment variables on your system:
 - **DB_NAME**: Name of your database (e.g., `ismgroup21`).
 - **DB_USERNAME**: Your database username.
 - **DB_PASSWORD**: Your database password.
-
+- **OPEN_WEATHER_API_KEY**: Your API key for weather data fetching.
 ### On Linux/MacOS
 - Use the following commands to set up the environment variables:
    ```bash
@@ -57,6 +57,7 @@ Define the following environment variables on your system:
    export DB_NAME=your_db_name
    export DB_USERNAME=your_username
    export DB_PASSWORD=your_password
+   export OPEN_WEATHER_API_KEY=your_api_key
    
 ### On Windows Command Prompt
 - Use the following commands to set up the environment variables:
@@ -66,6 +67,7 @@ Define the following environment variables on your system:
   set DB_NAME=your_db_name
   set DB_USERNAME=your_username
   set DB_PASSWORD=your_password
+  set OPEN_WEATHER_API_KEY=your_api_key 
 
 ### Step 3: Verify Database Connection
 - Test the connection by running the application on your Tomcat server.
@@ -82,5 +84,16 @@ Define the following environment variables on your system:
 - **Environment Variables**: Use tools like `.env` files for local development (e.g., `dotenv-java`).
 - **Database Scripts**: Include database schema and data population scripts in the `/db` folder if applicable.
 
+### Limitations
+This project is developed as part of a university course and is expected to have certain limitations:
+
+- **Business Logic**: The decision-making logic for irrigation recommendations is simplified for the purpose of this demo and may not account for all variables affecting olive cultivation. For practical implementation, further refinements would be needed to optimize the irrigation logic based on local agricultural practices and advanced weather patterns.
+
+- **Frontend Aesthetics**: The design of the user interface is functional but minimalistic. It's not intended to be a polished, production-ready design, but rather a demonstration of the core functionality of the application.
+
+- **Limited Region Coverage**: The application currently only supports the five main olive-producing regions in Greece. Expanding this to cover other agricultural areas would require additional development.
+
+- **Weather Data Accuracy**: The system relies on external weather data from the OpenWeather API. While this data is generally reliable, it may not always be fully accurate for localized or micro-climate conditions that may affect olive cultivation.
+  
 ### 🎉 Final Step: You're Ready to Go!
 Grab a cup of coffee, start your Tomcat server, and enjoy using AgroWise! 🚀
