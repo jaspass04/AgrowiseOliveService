@@ -9,8 +9,8 @@ public class DB {
     // Database connection settings
     private final String dbServer = "195.251.249.131";
     private final String dbServerPort = "3306";
-    private final String dbName = "ismgroup21";
-    private final String dbusername = "ismgroup21";
+    private final String dbName = System.getenv("DB_NAME");
+    private final String dbusername = System.getenv("DB_USERNAME");
     private final String dbpassword = System.getenv("DB_PASSWORD"); // Fetch password from environment variable
 
     private Connection con = null;
